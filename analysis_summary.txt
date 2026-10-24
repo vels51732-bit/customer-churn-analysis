@@ -1,0 +1,10 @@
+CUSTOMER CHURN DATA QUALITY & EXPLORATORY ANALYSIS\n==========================================================\n\nDataset note: This project uses a synthetic practice dataset generated for demonstration.\nRaw rows: 243\nColumns: 14\nExact duplicate rows removed: 3\nCleaning decisions:\n- Trimmed whitespace and converted blank-like strings to missing values.\n- Standardized known category spelling/case variants.\n- Converted numeric columns to numeric types.\n- Marked invalid binary, negative tenure, and negative charge values as missing.\n- Filled numeric missing values with median and categorical missing values with mode.\nRows after deduplication: 240\nMissing cells after cleaning: 0\n\nOverall churn rate: 29.2%\n\nChurn rate by contract type (%):\nContract
+Month-to-month    34.3
+One year          23.4
+Two year          20.8\n\nTenure summary by churn status:\n       count   mean  median
+Churn                      
+No       170  37.80    38.5
+Yes       70  23.26    18.0\n\nMonthly charges by churn status:\n        mean  median
+Churn               
+No     65.82   66.02
+Yes    78.55   76.54\n\nInterpretation note: This is a small synthetic dataset; patterns are illustrative, not business-grade conclusions.\n
